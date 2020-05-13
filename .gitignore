@@ -1,0 +1,21 @@
+# Intellij project files
+*.iml
+*.ipr
+*.iws
+.idea/
+
+#Gradle
+.gradletasknamecache
+.gradle/
+build/
+bin/
+gradle-wrapper.properties
+
+# Java class files
+*.class
+
+# generated files
+.DS_Store
+bin/
+gen/
+
