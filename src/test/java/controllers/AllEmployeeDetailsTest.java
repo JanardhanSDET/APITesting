@@ -35,12 +35,12 @@ public class AllEmployeeDetailsTest extends BaseTest {
           Iterator< Map.Entry<String,EmployeeDetails>> iterator = listOfEmployee.entrySet().iterator();
               while(iterator.hasNext()){
                   Map.Entry<String,EmployeeDetails> object = iterator.next();
-                  if(object.getKey().equalsIgnoreCase("1")){
+                  if(object.getKey().equals("1")){
                       EmployeeDetails details= object.getValue();
-                      Reporter.log(details.getEmployeeId());
-                      Reporter.log(details.getEmployeeAge());
-                      Reporter.log(details.getEmployeeName());
-                      Reporter.log(details.getEmployeeSalary());
+                      System.out.println(details.getEmployeeId());
+                      System.out.println(details.getEmployeeAge());
+                      System.out.println(details.getEmployeeName());
+                      System.out.println(details.getEmployeeSalary());
                       break;
                   }
 

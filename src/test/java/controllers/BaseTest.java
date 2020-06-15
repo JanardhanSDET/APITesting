@@ -8,6 +8,7 @@ public class BaseTest {
     public String baseUrl;
     public String createUrn;
     public String allEmplyoeesUrn;
+    public String getEmployeeDetailsUrn;
 
     @BeforeMethod(groups={"smokeTest","regressionTest"})
     public void setUp(){
@@ -16,6 +17,7 @@ public class BaseTest {
            baseUrl= setUpTestData.getBaseUrl();
            createUrn=setUpTestData.getCreateUrn();
            allEmplyoeesUrn= setUpTestData.getAllEmplyoeesUrn();
+        getEmployeeDetailsUrn =setUpTestData.getUrnForGetEmployeeDetails();
     }
 
 

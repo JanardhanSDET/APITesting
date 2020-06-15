@@ -29,9 +29,3 @@ dependencies {
 
 }
 
-task runTest(type: Test){
-    useTestNG(){
-     // suites "src/test/resources/testng.xml"
-
-    }
-}

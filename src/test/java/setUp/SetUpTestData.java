@@ -11,6 +11,7 @@ public class SetUpTestData {
     private String baseUrl;
     private String urnForAllEmployees;
     private String urnForCreateEmployee;
+    private String urnForGetEmployeeDetails;
 
     public SetUpTestData(Environment value) {
 
@@ -39,6 +40,7 @@ public class SetUpTestData {
         baseUrl = properties.getProperty("baseUrl");
         urnForAllEmployees = properties.getProperty("urnForListOfEmployees");
         urnForCreateEmployee = properties.getProperty("urnForCreateEmployee");
+        urnForGetEmployeeDetails=properties.getProperty("urnForGetEmployeeDetails");
 
     }
 
@@ -50,7 +52,13 @@ public class SetUpTestData {
         return urnForCreateEmployee;
     }
 
+    public String getUrnForGetEmployeeDetails() {
+        return urnForGetEmployeeDetails;
+    }
+
     public String getAllEmplyoeesUrn() {
         return urnForAllEmployees;
     }
+
+
 }
